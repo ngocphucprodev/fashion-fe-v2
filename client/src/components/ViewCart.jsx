@@ -697,7 +697,7 @@ const ViewCart = () => {
                   </Typography>
                   {/* {console.log(galleries.data[index]._id, product.gallery)} */}
 
-                  {galleries.data[index]._id == product.gallery ? (
+                  {/* {galleries.data[index]._id == product.gallery ? (
                     <Stack
                       direction="row"
                       sx={{ marginTop: "10px" }}
@@ -718,7 +718,7 @@ const ViewCart = () => {
                     </Stack>
                   ) : (
                     ""
-                  )}
+                  )} */}
                 </CardContent>
               </Card>
             </Grid>

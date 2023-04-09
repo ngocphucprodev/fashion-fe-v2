@@ -14,7 +14,7 @@ function Context({ children }) {
     useEffect(() => {
         dispatchCallProduct(request({ data: [] }))
         setTimeout(() => {
-            fetch("http://localhost:4000/product/show")
+            fetch("https://fashion-v6.onrender.com/product/show")
                 .then((response) => response.json())
                 .then((data) => dispatchCallProduct(requestSuccess(data)))
         }, 500)
@@ -22,7 +22,7 @@ function Context({ children }) {
 
     useEffect(() => {
         // dispatchCallProduct(request({ data: [] }))
-        fetch("http://localhost:4000/gallery/show")
+        fetch("https://fashion-v6.onrender.com/gallery/show")
             .then((response) => response.json())
             .then((data) => dispatchCallGallery({
                 type: "GET_GALLERY",
@@ -32,7 +32,7 @@ function Context({ children }) {
 
     const responLogin = (form) => {
         console.log(form)
-        fetch("http://localhost:4000/login", {
+        fetch("https://fashion-v6.onrender.com/login", {
             method: "POST",
             body: JSON.stringify(form),
             headers: { "Content-Type": "application/json" },
